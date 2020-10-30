@@ -33,10 +33,24 @@ Flexfringe can be called to learn DFA using the evidence-driven state-merging ev
 Resulting in the following output:
 
 ```
-x  x  x  x  x  x  m127  m146  m97  m70  m36  m25  m31  m19  m19  m18  m17  m6  m5  x  m63  m27  m4  m4  m4  m3  m1  m1  no more possible merges
+x1345  x603  x266  x195  x152  x145  m127  m146  m97  m70  m36  m25  m31  m19  m19  m18  m17  m6  m5  x9  m63  m27  m4  m4  m4  m3  m1  m1  no more possible merges
 ```
 
 Every step made by the algorithm is output to the console. An x means that the algorithm extends the red core with another state by coloring a blue state red, identifying a new state in the final model. The algorithm tried all possible merges between this state and the existing red core, and all failed to meet the consistency criterion set in the EDSM evaluation function:
+
+```c++
+bool count_driven::consistent(state_merger *merger, apta_node* left, apta_node* right){
+    if(inconsistency_found) return false;
+  
+    count_data* l = (count_data*)left->data;
+    count_data* r = (count_data*)right->data;
+
+    if(l->pos_final() != 0 && r->neg_final() != 0){ inconsistency_found = true; return false; }
+    if(l->neg_final() != 0 && r->pos_final() != 0){ inconsistency_found = true; return false; }
+    
+    return true;
+};
+```
 
 
 This code checks for every pair of merged states (apta_node) during determinization, whether one is positive and the other negative. If so, the resulting model is considered inconsistent because it is no longer a perfect classifier. The method sets found_inconsistency to true and returns false. If not, the method returns true, indicating that the pair of states can be merged.
