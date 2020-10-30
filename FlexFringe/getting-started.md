@@ -86,7 +86,21 @@ All input traces go through the root, resulting in high initial ocurrences and e
 
 ![image of learned state machine](models/tutorial1.png)
 
-The root state is indicated by the rectangle, final states (in which positive traces end) are indicated by double circles, and all the counts of transitions and state occurrence are printed after the # character. We provide a python notebook that can be used to run traces through the learned model (using the .json file as input) for instance to compute the accuracy on a test set. This will be described in a later tutorial. For now, it is most important to understand the basic steps, including consistency checks. Here we show several steps of the learning algorithm, resulting in smaller and smaller models, on the tutorial input file:
+The root state is indicated by the rectangle. The information printed in a state, i.e:
+
+```
+1:#4826
+0:0 - 1:116 -
+```
+
+means that this is state number 1 (a simple identifier), it occurs 4826 times in total in the training data (a state can occur multiple times in one trace), 0 negative traces (0:0) end in this state, and 116 positive traces end in it (1:116). For a transition, i.e.:
+
+```
+0
+0:2604 - 1:2106 -
+```
+
+The first symbol is the label of the transition (the event triggering this transition to fire), it occurs 2604 times in negative traces, and 2106 times in positive traces. Note that the information under the first line is printed by the evaluation function, thus using a different function will likely result in different information being printed. We also provide a python notebook that can be used to run traces through the learned model (using the .json file as input) for instance to compute the accuracy on a test set. This will be described in a later tutorial. For now, it is most important to understand the basic steps, including consistency checks, and the output of the learning algorithm. Here we show several steps of FlexFringe on the tutorial input file, resulting in smaller and smaller models - the dashed states are not yet identified parts of the prefix tree:
 
 ![image of learned state machine](models/tutorial1-2.png)
 ![image of learned state machine](models/tutorial1-3.png)
