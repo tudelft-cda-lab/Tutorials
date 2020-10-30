@@ -35,7 +35,11 @@ Resulting in the following output:
 x1345  x603  x266  x195  x152  x145  m127  m146  m97  m70  m36  m25  m31  m19  m19  m18  m17  m6  m5  x9  m63  m27  m4  m4  m4  m3  m1  m1  no more possible merges
 ```
 
-As well as a learned model in both .dot and .json format:
+As well as a learned model in both .dot and .json format, running:
+
+```
+dot -Tpdf tutorial1.traces.ff.final.dot -o tutorial1.png
+```
 
 ![image of learned state machine](models/tutorial1.png)
 
