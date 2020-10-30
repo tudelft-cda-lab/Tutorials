@@ -116,4 +116,13 @@ The first symbol is the label of the transition (the event triggering this trans
 ![image of learned state machine](models/tutorial1-9.png)
 ![image of learned state machine](models/tutorial1-10.png)
 
+> @inproceedings{verwer2017flexfringe,
+>  title={Flexfringe: a passive automaton learning package},
+>  author={Verwer, Sicco and Hammerschmidt, Christian A},
+>  booktitle={2017 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+>  pages={638--642},
+>  year={2017},
+>  organization={IEEE}
+>}
+
 
