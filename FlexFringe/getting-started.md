@@ -40,6 +40,7 @@ As well as a learned model in both .dot and .json format, running:
 ```
 dot -Tpdf tutorial1.traces.ff.final.dot -o tutorial1.png
 ```
+gives
 
 ![image of learned state machine](models/tutorial1.png)
 
