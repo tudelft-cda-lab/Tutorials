@@ -2,15 +2,14 @@
 FlexFringe is a tool for learning state machine models from input traces. It is based on the classic red-blue fringe state merging algorithm but uses flexible evaluation functions that can be used to learn a diverse set of models. In this post, we use FlexFringe to learn one of the simplest state machines: a deterministic finite state machine (DFA). A DFA is basically a classifier for sequences. Given a sample input file [traces](models/tutorial1.traces "traces") with 2000 traces:
 
 ```
-2000 8
-1 0
-1 6 5 0 2 5 4 0
-0 9 5 2 1 1 2 7 1 2 1
-1 6 5 2 7 7 0 2
-0 1 3
-1 8 5 2 0 0 5 5 5 5
-0 13 2 7 0 2 4 1 1 2 1 1 0 2 4
-1 3 5 0 2
+2000 5
+0 9 1 1 1 3 0 0 2 3 1
+0 3 1 1 3
+0 0
+0 13 1 3 0 3 0 1 1 1 1 3 0 3 3
+0 9 1 3 0 1 1 3 0 1 3
+0 0
+1 4 4 2 2 0
 …
 ```
 
