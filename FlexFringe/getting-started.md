@@ -70,7 +70,7 @@ This counts, over all pairs of states merged during determinization, the number 
 
 ```c++
 double evidence_driven::compute_score(state_merger *merger, apta_node* left, apta_node* right){
-  return num_pos + num_neg;
+    return num_pos + num_neg;
 };
 ```
 
