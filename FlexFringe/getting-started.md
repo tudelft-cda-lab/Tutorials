@@ -36,6 +36,10 @@ Resulting in the following output:
 x1345  x603  x266  x195  x152  x145  m127  m146  m97  m70  m36  m25  m31  m19  m19  m18  m17  m6  m5  x9  m63  m27  m4  m4  m4  m3  m1  m1  no more possible merges
 ```
 
+As well as a learned model in both .dot and .json format:
+
+![image of learned state machine](models/tutorial1.png)
+
 Every step made by the algorithm is output to the console. An x means that the algorithm extends the red core with another state by coloring a blue state red, identifying a new state in the final model. The algorithm tried all possible merges between this state and the existing red core, and all failed to meet the consistency criterion set in the EDSM evaluation function (inherited from the count_driven class):
 
 ```c++
@@ -74,13 +78,24 @@ double evidence_driven::compute_score(state_merger *merger, apta_node* left, apt
 };
 ```
 
-Every pair of positive-positive and negative-negative states is considered evidence that the merge is correct. The values are larger at the start of the merging process because the algorithms initially perform merges at the root of a prefix tree:
+Every pair of positive-positive and negative-negative states is considered evidence that the merge is correct. The core state merging algorithm is greedy and in every iteration tries all possible red-blue merges. From all consistent merges, it then selects and performs the one with largest evidence score. When there are no consistent merges, it extends the core of red states by coloring red the blue state that has the largest number of occurences. The evidence (and occurrence) values are larger at the start of the merging process because the algorithms initially perform merges at the root of a prefix tree:
 
+![image of prefix tree](models/tutorial1-1.png)
 
+All input traces go through the root, resulting in high initial ocurrences and evidence values. Later in the process, the merge scores become smaller and smaller because the lower levels of model are reached by fewer and fewer input traces. When learning models, it is important to monitor the merge scores and make sure they do not drop become too small (meaning merges are performed based on very little evidence). This can be controlled using the lowerbound parameter and by using sink states. In the run above, the final merge scores are low and we might consider putting a lowerbound of 10 to avoid making those merges. We discuss these and other parameter settings in another post. The early large merge scores give us confidence however that most of the identified states in the learned state machine are correct:
 
+![image of learned state machine](models/tutorial1.png)
 
-All input traces go through the root, resulting in high initial evidence values. Later in the process, the merge scores become smaller and smaller because the lower levels of model are reached by fewer and fewer input traces. When learning models, it is important to monitor the merge scores and make sure they do not drop become too small (meaning merges are performed based on very little evidence). This can be controlled using the lowerbound parameter and by using sink states. We discuss these and other parameter settings in another post. In the run above, the scores stay sufficiently high, giving us confidence that the state machine model provided in the form of a Graphviz dot file is (mostly) correct:
+The root state is indicated by the rectangle, final states (in which positive traces end) are indicated by double circles, and all the counts of transitions and state occurrence are printed after the # character. We provide a python notebook that can be used to run traces through the learned model (using the .json file as input) for instance to compute the accuracy on a test set. This will be described in a later tutorial. For now, it is most important to understand the basic steps, including consistency checks. Here we show several steps of the learning algorithm, resulting in smaller and smaller models, on the tutorial input file:
 
+![image of learned state machine](models/tutorial1-2.png)
+![image of learned state machine](models/tutorial1-3.png)
+![image of learned state machine](models/tutorial1-4.png)
+![image of learned state machine](models/tutorial1-5.png)
+![image of learned state machine](models/tutorial1-6.png)
+![image of learned state machine](models/tutorial1-7.png)
+![image of learned state machine](models/tutorial1-8.png)
+![image of learned state machine](models/tutorial1-9.png)
+![image of learned state machine](models/tutorial1-10.png)
 
-The root state is indicated by the rectangle, final states (in which positive traces end) are indicated by double circles, and all the counts of transitions and state occurrence are printed after the # character. We provide a python notebook that can be used to run traces through the learned model for instance to compute the accuracy on a test set:
 
