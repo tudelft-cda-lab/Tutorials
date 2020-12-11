@@ -1,7 +1,7 @@
 
 FlexFringe is a tool for learning state machine models from input traces. It is based on the classic red-blue fringe state merging algorithm but uses flexible evaluation functions that can be used to learn a diverse set of models. In this post, we use FlexFringe to learn a probabilistic deterministic finite state automaton (PDFA). A PDFA is a probabilstic model similar to a hidden Markov model (HMM), but with a unique starting state and state transitions that are triggered by the event occurrences.
 
-![PDFA image](img/pdfa_img.png)
+![PDFA image](img/pdfa_img.pdf)
 
 A PDFA is a generative model for distributions over sequences. It has a unique starting state (arrow pointing to the left-most state). From there it generates symbols/events according to the associated probabilities. For instance, in the model above, it generates a with probability 0.43 or b with probability 0.57. Simultaneously, it moves the current state of the system to the next one, as indicated by the transition arrows, and continues the generating process. In this way, it generates sequences. Multiplying the individual probabilites then gives the sequence probability. For instance, aabba has probability 0.43 * 1.0 * 0.57 * 0.44 * 0.33 * 1.00 = 0.036... This models distributions over sequences of equal length (the sum of all probabilities assigned to sequences of the same length equals 1). Optionally, the states can contain stopping/final probabilities in addition to the transition probabilities. When it does, a PDFA models a distribution over the set of all sequences. Note that the model above does not contain a b transition for the state reached by a. This transition has a probability of 0 and is therefore not drawn.
 
