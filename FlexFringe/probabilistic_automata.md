@@ -21,13 +21,15 @@ We use the same input file as the getting started tutorial [traces](models/tutor
 …
 ```
 
-We run Flexfringe using the Alergia evaluation function. Alergia is a well-known algorithm that merges states in the initial prefix tree using a statistical test based on the Hoeffding bound. Essentially, the distributions for every pair of merged states is required to be not significantly different. Flexfringe includes some additional tricks that make this test more powerful. We explain these tricks in later tutorials. ...
+We run Flexfringe using the Alergia evaluation function. Alergia is a well-known algorithm that merges states in the initial prefix tree using a statistical test based on the Hoeffding bound. Essentially, the distributions for every pair of merged states is required to be not significantly different. Flexfringe includes some additional tricks that make this test more powerful. We explain these tricks in later tutorials. Note that altough the input file contains type information for every input sequence, the algorithm ignores this and only uses the occurrence counts to construct a model. In FlexFringe, it is of course possible to use both these information sources during the merging process, we will explain in a later tutorial how.
 
 ```
 ./flexfringe tutorial1.traces --ini ini/alergia.ini
 ```
 
-Resulting in the following output:
+Results in the following output:
+
+....
 
 ```
 x1345  x603  x266  x195  x152  x145  m127  m146  m97  m70  m36  m25  m31  m19  m19  m18  m17  m6  m5  x9  m63  m27  m4  m4  m4  m3  m1  m1  no more possible merges
