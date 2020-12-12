@@ -13,7 +13,7 @@ FlexFringe is a tool for learning state machine models from input traces. It is 
 …
 ```
 
-We call Flexfringe can be called to learn DFA using the evidence-driven state-merging evaluation (EDSM) function with the command:
+We call Flexfringe using the evidence-driven state-merging evaluation (EDSM) function with the command:
 
 ```
 ./flexfringe tutorial1.traces --ini ini/edsm.ini
@@ -34,47 +34,7 @@ gives
 
 ![image of learned state machine](models/tutorial1.png)
 
-Every step made by the algorithm is output to the console. An x means that the algorithm identifies a new state in the model. The algorithm tried all possible merges between this state and the existing ones, and all failed to meet the consistency criterion set in the EDSM evaluation function (inherited from the count_driven class):
-
-```c++
-bool count_driven::consistent(state_merger *merger, apta_node* left, apta_node* right){
-    if(inconsistency_found) return false;
-  
-    count_data* l = (count_data*)left->data;
-    count_data* r = (count_data*)right->data;
-
-    if(l->pos_final() != 0 && r->neg_final() != 0){ inconsistency_found = true; return false; }
-    if(l->neg_final() != 0 && r->pos_final() != 0){ inconsistency_found = true; return false; }
-    
-    return true;
-};
-```
-
-This code first casts the data type in the states (apta_node*) to count_data, giving access to the data and functions required for the test, and then checks a pair of merged states during determinization, whether one is positive (l->pos_final() != 0) and the other negative (r->neg_final() != 0). If so, the resulting model is considered inconsistent because there exists a state that both a positive and a negative trace end in. The method sets found_inconsistency to true and returns false. If not, the method returns true, indicating that the pair of states can be merged. This method is called for ever pair of states that are merged during determinization.
-
-The number next to the x is the number of occurrences of the extended state. It also prints the performed merges m. Every m means a merge between an identified and not yet identified state has been performed, identifying a new transition in the final model. The number next to the m is the score of the EDSM evaluation function:
-
-```c++
-void evidence_driven::update_score(state_merger *merger, apta_node* left, apta_node* right){
-    edsm_data* l = (edsm_data*) left->data;
-    edsm_data* r = (edsm_data*) right->data;
-
-    if(l->pos_final() > 0 && r->pos_final() > 0) num_pos += 1;
-    if(l->neg_final() > 0 && r->neg_final() > 0) num_neg += 1;
-};
-```
-
-This counts, over all pairs of states merged during determinization, the number of merdeg positive-positive and negative-negative state pairs. The method adds 1 to a counter for all such merges and returns the total count in the compute_score function:
-
-```c++
-double evidence_driven::compute_score(state_merger *merger, apta_node* left, apta_node* right){
-    return num_pos + num_neg;
-};
-```
-
-Every pair of positive-positive and negative-negative states is considered evidence that the merge is correct. The core state merging algorithm is greedy and in every iteration tries all possible merges between identified states and their children. From all consistent merges, it then selects and performs the one with largest evidence score. When there are no consistent merges, it extends the identified states by adding the not yet identified state with the largest number of occurences. The evidence (and occurrence) values are larger at the start of the merging process because the algorithms initially perform merges at the root of a prefix tree:
-
-![image of prefix tree](models/tutorial1-1.png)
+Every step made by the algorithm is output to the console, the meaning of which is explained in the getting_started tutorial. Basically, we want to perform merges with a lot of evidence, i.e., the number next to m should be large. States are added to the model when they are inconsistent with all current states, the number next to an x gives the number of occurrences of an added state.
 
 All input traces go through the root, resulting in high initial ocurrences and evidence values. Later in the process, the merge scores become smaller and smaller because the lower levels of model are reached by fewer and fewer input traces. When learning models, it is important to monitor the merge scores and make sure they do not drop become too small (meaning merges are performed based on very little evidence). This can be controlled using the lowerbound parameter and by using sink states. In the run above, the final merge scores are low and we might consider putting a lowerbound of 10 to avoid making those merges. We discuss these and other parameter settings in another post. The early large merge scores give us confidence however that most of the identified states in the learned state machine are correct:
 
