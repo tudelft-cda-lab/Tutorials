@@ -1,5 +1,5 @@
 
-FlexFringe is a tool for learning state machine models from input traces. It is based on the classic red-blue fringe state merging algorithm but uses flexible evaluation functions that can be used to learn a diverse set of models. In this post, we use FlexFringe to learn one of the simplest state machines: a deterministic finite state machine (DFA). A DFA is basically a classifier for sequences. Given a sample input file [traces](models/tutorial1.traces "traces") with 2000 traces:
+FlexFringe is a tool for learning state machine models from input traces. It is based on the classic red-blue fringe state merging algorithm but uses flexible evaluation functions that can be used to learn a diverse set of models. In this post, we use FlexFringe to learn one of the simplest state machines: a deterministic finite state machine (DFA). In addition, we show the effect of several basic control variables on the learning algorithm, and how to set them on your own data. If this is your first time running FlexFringe, please run the getting_started tutorial first. A DFA is basically a classifier for sequences. Given a sample input file [traces](models/tutorial1.traces "traces") with 2000 traces in Abbadingo format:
 
 ```
 2000 5
@@ -13,17 +13,7 @@ FlexFringe is a tool for learning state machine models from input traces. It is 
 …
 ```
 
-in Abbadingo format:
-
-```
-num_traces alphabet_size
-class length sequence
-class length sequence
-class length sequence
-…
-```
-
-Flexfringe can be called to learn DFA using the evidence-driven state-merging evaluation (EDSM) function with the command:
+We call Flexfringe can be called to learn DFA using the evidence-driven state-merging evaluation (EDSM) function with the command:
 
 ```
 ./flexfringe tutorial1.traces --ini ini/edsm.ini
