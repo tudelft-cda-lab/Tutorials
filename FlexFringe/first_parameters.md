@@ -50,16 +50,38 @@ to edsm.ini, resulting in radically changed algorithm behavior:
  x1345  x603  x266  x195  x152  x145  x78  x35  x24  x18  x16  x15  x12  x9  x8  x8  x6  x5  x5  x5  x4  x4  x4  x4  x3  x3  x3  x3  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m127  x3  x3  x3  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m146  x3  x3  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m97  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m70  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m36  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m35  x1  x1  x1  x1  m20  x1  x1  x1  x1  x1  x1  m18  x1
 ```
 
-So, what is going on? It might look like something is wrong, but this is the intended effect of using a lowerbound value. Without a lowerbound, any state-pair that is consistent can be merged. With a lowerbound l, the state-pair in addition needs to achieve a merge score of at least l. In EDSM, the merge score is simply the number of performed merges, so at least 10 merges need to be performed during the determinization process. Let us have a look at how the state machine structure (the red states) progresses during the EDSM run:
+So, what is going on? It might look like something is wrong, but this is the intended effect of using a lowerbound value. Without a lowerbound, any state-pair that is consistent can be merged. With a lowerbound l, the state-pair in addition needs to achieve a merge score of at least l. In EDSM, the merge score is simply the number of performed merges, so at least 10 merges need to be performed during the determinization process. Let us have a look at how the state machine structure progresses during the EDSM run (red states in solid lines, blue states in dashed lines) :
 
 ![image of learned state machine](models/tutorial_lowerbound1.png)
 
-It states with a root
+It starts with a root (solid) and 3 children (dashed). The solid states are identified and its children are options for merges. The algorithm adds one of the dashed states to the solid core:
 
 ![image of learned state machine](models/tutorial_lowerbound2.png)
+
+And several more, until the point where it would have performed a merge before we added the lowerbound constraint:
+
 ![image of learned state machine](models/tutorial_lowerbound3.png)
+
+At this point it keeps adding states to the core, learning new states in the state machine model, even with single occurrences (x1 in the algorithm run output), essentially forming a tree:
+
 ![image of learned state machine](models/tutorial_lowerbound4.png)
+
+Until finally it performs the merges it perfomed at the start of the run without the lowerbound constraint (m127, m146, m97), resulting in:
+
 ![image of learned state machine](models/tutorial_lowerbound5.png)
+
+This gives essentially a tree, with some merges close to the root. The FlexFringe algorithm added all those states to the core because these failed the lowerbound criterion, i.e., they could not be merged consistently with any other state and obtain a merge score of at least 10. In the default setting, whenever the algorithm finds a (blue) state that cannot be merged with any other (red) state, it adds that state to the core (coloring it red). This behavior can be changed by setting the extend parameter to false.
+
+**Extend.** We add the line
+
+```
+extend = 0
+```
+
+to edsm.ini, resulting in:
+
+
+
 
 You may also notice that the algorithm starts with several extend actions before perfoming merges. Let us first investigate how to modify this initial behavior. In images, the initial part of the run looks as follows:
 
