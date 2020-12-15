@@ -53,6 +53,9 @@ to edsm.ini, resulting in radically changed algorithm behavior:
 So, what is going on? It might look like something is wrong, but this is the intended effect of using a lowerbound value. Without a lowerbound, any state-pair that is consistent can be merged. With a lowerbound l, the state-pair in addition needs to achieve a merge score of at least l. In EDSM, the merge score is simply the number of performed merges, so at least 10 merges need to be performed during the determinization process. Let us have a look at how the state machine structure (the red states) progresses during the EDSM run:
 
 ![image of learned state machine](models/tutorial_lowerbound1.png)
+
+It states with a root
+
 ![image of learned state machine](models/tutorial_lowerbound2.png)
 ![image of learned state machine](models/tutorial_lowerbound3.png)
 ![image of learned state machine](models/tutorial_lowerbound4.png)
