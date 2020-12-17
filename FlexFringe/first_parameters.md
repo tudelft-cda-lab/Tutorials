@@ -85,8 +85,11 @@ m64  x1475  m140  x1111  m166  x565  m33  x490  m24  m31  m17  m18  x299  m75  x
  ```
 FlexFringe performs a merge immediately:
 
+![image of learned state machine](models/tutorial_lowerbound_extend1.png)
+
 and results in a small model where states that fail the lowerbound constraint are left as subtrees:
 
+![image of learned state machine](models/tutorial_lowerbound_extend2.png)
 
 
 
