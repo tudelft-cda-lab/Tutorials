@@ -132,7 +132,7 @@ and a much larger state machine model, caused by the interaction between lowerbo
 
 ![image of learned state machine](models/tutorial_largestblue.png)
 
-Let's remove the shallowfirst parameter from edsm.ini. There are two more parameters that we discuss in this tutorial that significantly influence the learned model. The finalred parameter prevents FlexFringe from adding new transitions to red states, i.e., a new transition cannot be added by a merge (also during determinization) to a state that is already in the core. Intuitively, the states in the core are already identified (learned). Changing the already identified structure using data from later (and often less certain) merges can therefore be considered bad. Let's see what it does to our learning process.
+Let's remove the shallowfirst parameter from edsm.ini. The last parameter we discuss in this tutorial is finalred. This parameter prevents FlexFringe from adding new transitions to red states, i.e., a new transition cannot be added by a merge (also during determinization) to a state that is already in the core. Intuitively, the states in the core are already identified (learned). Changing the already identified structure using data from later (and often less certain) merges can therefore be considered bad. Let's see what it does to our learning process.
 
 **Finalred.** We add the line
 
@@ -149,7 +149,7 @@ and a seemingly good, but different model:
 
 ![image of learned state machine](models/tutorial_finalred.png)
 
-Comprating the performed merges to the algorithm output from the largestblue run, we observe that the second merge
+Comparing the performed merges to the algorithm output from the largestblue run, we observe that the second merge
 
 ```
 x1345  x603  m127  m146
@@ -160,44 +160,13 @@ is not performed. Instead the considered blue state is added to the red core (x4
 ![image of learned state machine](models/tutorial_finalredm4.png)
 ![image of learned state machine](models/tutorial_largestbluem4.png)
 
-The merge would add a transistion with label 2 to the state reached by a 1 from the root. Although this state occurs only 3 times in total, the structural change is considered sufficient to prevent this merge from happening. This is the main purpose of the finalred parameter. Whether such prevention is good or bad depends on your data and use of the learned mdoel. If you only intend to use them as predictors/classifiers, then having only a few traces create a larger model seems wrong from a model selection perspective. If you intend to visualize the model in order to obtain insight, then not using finalred incorrectly shows that the trace 1 2 can occur, while in fact it never did.
+The merge would add a transistion with label 2 to the state reached by a 1 from the root. Although this state occurs only 3 times in total, the structural change is considered sufficient to prevent this merge from happening. This is the main purpose of the finalred parameter. Whether such prevention is good or bad depends on your data and use of the learned model. If you only intend to use them as predictors/classifiers, then having only a few traces create a larger model seems wrong from a model selection perspective. If you intend to visualize the model in order to obtain insight, however, then not using finalred incorrectly shows that the trace 1 2 can occur, while in fact it never did. This is unavoidable in machine learning since every algorithm generalizes to unseen events. However, limiting it to not yet identified states seems sensible. What to do of course also depends on your data. Is the presense/absense of a symbol a strong indicator for the transitions that are possible? In our view, in this case, it is perfectly defendable to not merge a state with 459 occurrences out of which 3 are a 2 symbol, with one that occurs 2305 times out of which none are a 2 symbol. We frequently use the finalred parameter in our experiments, but we advice that you try and see the effect it has on your model.
 
+**Predictive performace vs insight**
 
+....
 
-
-
-
-while only very few  use-case
-
-All input traces go through the root, resulting in high initial ocurrences and evidence values. Later in the process, the merge scores become smaller and smaller because the lower levels of model are reached by fewer and fewer input traces. When learning models, it is important to monitor the merge scores and make sure they do not drop become too small (meaning merges are performed based on very little evidence). This can be controlled using the lowerbound parameter and by using sink states. In the run above, the final merge scores are low and we might consider putting a lowerbound of 10 to avoid making those merges. We discuss these and other parameter settings in another post. The early large merge scores give us confidence however that most of the identified states in the learned state machine are correct:
-
-![image of learned state machine](models/tutorial1.png)
-
-The root state is indicated by the rectangle. The information printed in a state, i.e:
-
-```
-1:#4826
-0:0 - 1:116 -
-```
-
-means that this is state number 1 (a simple identifier), it occurs 4826 times in total in the training data (a state can occur multiple times in one trace), 0 negative traces (0:0) end in this state, and 116 positive traces end in it (1:116). For a transition, i.e.:
-
-```
-0
-0:2604 - 1:2106 -
-```
-
-The first symbol is the label of the transition (the event triggering this transition to fire), it occurs 2604 times in negative traces, and 2106 times in positive traces. Note that the information under the first line is printed by the evaluation function, thus using a different function will likely result in different information being printed. We also provide a python notebook that can be used to run traces through the learned model (using the .json file as input) for instance to compute the accuracy on a test set. This will be described in a later tutorial. For now, it is most important to understand the basic steps, including consistency checks, and the output of the learning algorithm. Here we show several steps of FlexFringe on the tutorial input file, resulting in smaller and smaller models. The dashed states are not yet identified parts of the prefix tree, the solid parts are the identified ones:
-
-![image of learned state machine](models/tutorial1-2.png)
-![image of learned state machine](models/tutorial1-3.png)
-![image of learned state machine](models/tutorial1-4.png)
-![image of learned state machine](models/tutorial1-5.png)
-![image of learned state machine](models/tutorial1-6.png)
-![image of learned state machine](models/tutorial1-7.png)
-![image of learned state machine](models/tutorial1-8.png)
-![image of learned state machine](models/tutorial1-9.png)
-![image of learned state machine](models/tutorial1-10.png)
+For this tutorial, let's see what is most likely we can cheat a little bit by increasing the number of traces
 
 If you use FlexFringe in your research paper, please consider citing the following reference:
 
