@@ -85,15 +85,68 @@ m64  x1475  m140  x1111  m166  x565  m33  x490  m24  m31  m17  m18  x299  m75  x
  ```
 FlexFringe performs a merge immediately:
 
+![image of learned state machine](models/tutorial_lowerbound_extend0.png)
 ![image of learned state machine](models/tutorial_lowerbound_extend1.png)
 
 and results in a small model where states that fail the lowerbound constraint are left as subtrees:
 
 ![image of learned state machine](models/tutorial_lowerbound_extend2.png)
 
+This is not a bad model to have. Essentially, the merges for which the algorithm has confidence (the smallest number of merged states is 17 during determinization) are performed. The remaining part of the input data remains intact. Depending on your data, however, there can still be a problem in that is first merges a state (reached by symbol 2) that occurs only 177 times, before it decides what to do with the state reached by 1, which occurs 1345 times. Note that performing merges updates such counts for later iterations. Although this can be good for some datasets, it seems counterintuitive to first makes decisions on states that occur less frequently. To control this behavior, FlexFringe includes a largestblue parameter.
+
 
 
 You may also notice that the algorithm starts with several extend actions before perfoming merges. Let us first investigate how to modify this initial behavior. In images, the initial part of the run looks as follows:
+
+**Largestblue.** We add the line
+
+```
+largestblue = 1
+```
+
+to edsm.ini, resulting in:
+
+```
+x1345  x603  m127  m146  x518  x432  x266  m15  m97  x190  x162  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1
+ ```
+
+and the same final state machine model:
+
+![image of learned state machine](models/tutorial_largestblue.png)
+
+Now it does first extend more frequent states before merging less frequent ones. This has the effect that the first merge it performs has more confidence (127 merged state pairs, instead of 64). Since the merges influence each other, this can lead to better models, but also to worse ones. It all depends on the data you have available and the used heuristic functions. Importantly, since the merges influence the occurence counts, a heuristic based on statistics can be influenced by merges in such a way that consistent pairs become inconsistent and the other way around. The early implementations of state merging algorithms, such as basic Alergia and RPNI, used a shallow-first (close to the root) search order. Flexfringe includes this as an option using the shallowfirst parameter. Although we rarely use it in practice, it can be useful when experimenting with different merging strategies.
+
+**Shallowfirst.** We add the line
+
+```
+shallowfirst = 1
+```
+
+to edsm.ini, resulting in:
+
+```
+ x1345  m127  x1003  x340  m23  x145  x2  x1  x1  x1  x1  x1  x1  x1  x11  x3  x1  x1  x1  x1  x1  x7  x4  x1  x1  x1  x1  x1  x3  x3  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x36  x20  x4  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x7  x3  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m12  m160  x1  x1  x1  x1  x2  x2  x1  x1  x3  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m11  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m49  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x3  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x5  x2  x2  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x3  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x3  x2  x2  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x4  x3  x3  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x7  x1  x2  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x3  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m100  x1  x1  x1  x310  m79  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x184  m20  x5  x1  x1  x1  x1  x1  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x12  x3  x1  x1  x1  x2  x2  x1  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  m21
+ ```
+
+and a much larger state machine model, caused by the interaction between lowerbound and shallowfirst parameters (suddenly many states are considered first that occur infrequently):
+
+![image of learned state machine](models/tutorial_largestblue.png)
+
+Let's remove the shallowfirst parameter from edsm.ini. There are two more parameters that we discuss in this tutorial that significantly influence the learned model. The finalred parameter prevents FlexFringe from adding new transitions to red states, i.e., a new transition cannot be added by a merge (also during determinization) to a state that is already in the core. Intuitively, the states in the core are already identified (learned). Changing the already identified structure using data from later (and often less certain) merges can therefore be considered bad. Let's see what it does to our learning process.
+
+**Finalred.** We add the line
+
+```
+finalred = 1
+```
+
+to edsm.ini, resulting in:
+
+```
+ x1345  x603  m127  x459  x340  x296  x266  m47  m83  m14  m92  x162  m21  x190  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1
+ 
+x1345  x603  m127  m146  x518  x432  x266  m15  m97  x190  x162  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1 
+ ```
 
 
 
