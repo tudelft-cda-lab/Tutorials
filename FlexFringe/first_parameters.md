@@ -143,12 +143,31 @@ finalred = 1
 to edsm.ini, resulting in:
 
 ```
- x1345  x603  m127  x459  x340  x296  x266  m47  m83  m14  m92  x162  m21  x190  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1
- 
-x1345  x603  m127  m146  x518  x432  x266  m15  m97  x190  x162  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1 
- ```
+x1345  x603  m127  x459  x340  x296  x266  m47  m83  m14  m92  x162  m21  x190  m71  x112  m36  m15  m54  m45  m23  m25  m21  m20  x15  x13  x12  x9  x8  x5  x5  x3  x3  x3  x2  x2  x2  x2  x2  x2  x2  x2  x2  x2  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1  x1
+```
+and a seemingly good, but different model:
+
+![image of learned state machine](models/tutorial_finalred.png)
+
+Comprating the performed merges to the algorithm output from the largestblue run, we observe that the second merge
+
+```
+x1345  x603  m127  m146
+```
+
+is not performed. Instead the considered blue state is added to the red core (x459). These two plots show why:
+
+![image of learned state machine](models/tutorial_finalredm4.png)
+![image of learned state machine](models/tutorial_largestbluem4.png)
+
+The merge would add a transistion with label 2 to the state reached by a 1 from the root. Although this state occurs only 3 times in total, the structural change is considered sufficient to prevent this merge from happening. This is the main purpose of the finalred parameter. Whether such prevention is good or bad depends on your data and use of the learned mdoel. If you only intend to use them as predictors/classifiers, then having only a few traces create a larger model seems wrong from a model selection perspective. If you intend to visualize the model in order to obtain insight, then not using finalred incorrectly shows that the trace 1 2 can occur, while in fact it never did.
 
 
+
+
+
+
+while only very few  use-case
 
 All input traces go through the root, resulting in high initial ocurrences and evidence values. Later in the process, the merge scores become smaller and smaller because the lower levels of model are reached by fewer and fewer input traces. When learning models, it is important to monitor the merge scores and make sure they do not drop become too small (meaning merges are performed based on very little evidence). This can be controlled using the lowerbound parameter and by using sink states. In the run above, the final merge scores are low and we might consider putting a lowerbound of 10 to avoid making those merges. We discuss these and other parameter settings in another post. The early large merge scores give us confidence however that most of the identified states in the learned state machine are correct:
 
