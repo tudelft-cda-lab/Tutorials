@@ -68,7 +68,7 @@ First, a suffix tree is learnt, which can be interpreted as follows:
 
 After merging, the following model is generated:
 
-![Suffix-based PDFA model](models/tut4-suffix-model)
+![Suffix-based PDFA model](models/tut4-suffix-model.png)
 
 The interpretation of this model is tricky. In essence, this model predicts the past symbols based on the future symbols. It seems a little absurd, but the idea is that given a particular high-severity symbol _x_, we want to predict all paths that lead to _x_. 
 
