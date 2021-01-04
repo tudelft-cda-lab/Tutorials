@@ -1,0 +1,537 @@
+536 112
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 13 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|remoteAccess surf|remoteAccess infoD|remoteAccess serD|unassigned vulnD|storage hostD|http(s) surf|http(s) infoD|http(s) netDOS|http(s)
+1 8 surf|remoteAccess infoD|remoteAccess surf|remoteAccess serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|unassigned
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|broadcast surf|broadcast
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 9 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 11 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage hostD|http(s) surf|http(s) infoD|http(s) netDOS|http(s)
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 3 hostD|http(s) serD|unassigned vulnD|storage
+1 5 hostD|surveillance serD|unassigned vulnD|storage surf|surveillance infoD|surveillance
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 3 hostD|http(s) serD|unassigned vulnD|storage
+1 6 hostD|hostingServer serD|unassigned vulnD|storage surf|hostingServer infoD|hostingServer netDOS|http(s)
+1 4 hostD|hostingServer serD|unassigned vulnD|storage surf|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 hostD|unassigned serD|unassigned vulnD|storage
+1 6 hostD|wireless serD|unassigned vulnD|storage surf|wireless infoD|wireless netDOS|http(s)
+1 13 surf|http(s) serD|unassigned vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 15 serD|unassigned serD|unassigned vulnD|storage surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 14 serD|ATCcomm vulnD|storage surf|http(s) vulnD|wireless infoD|http(s) rPrivEsc|wireless acctManip|wireless remoteexp|wireless CnC|http(s) ACE|http(s) resHJ|wireless dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|ATCcomm vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|ATCcomm vulnD|storage serD|unassigned vulnD|storage
+1 10 serD|ATCcomm vulnD|storage surf|surveillance vulnD|surveillance infoD|surveillance rPrivEsc|surveillance remoteexp|surveillance ACE|surveillance dManip|surveillance exfil|surveillance
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 20 serD|unassigned vulnD|storage serD|storage vulnD|storage hostD|remoteAccess serD|storage vulnD|storage serD|unassigned vulnD|http(s) hostD|remoteAccess surf|remoteAccess infoD|http(s) rPrivEsc|http(s) acctManip|remoteAccess remoteexp|http(s) ACE|http(s) resHJ|remoteAccess dManip|http(s) exfil|http(s) delivery|http(s)
+1 8 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage
+1 7 serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|unassigned vulnD|storage hostD|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 5 hostD|surveillance serD|unassigned vulnD|storage infoD|unassigned exfil|unassigned
+1 5 vulnD|storage serD|unassigned hostD|surveillance infoD|unassigned exfil|unassigned
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|voip hostD|remoteAccess serD|unassigned vulnD|storage serD|voip hostD|remoteAccess
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 3 serD|unassigned vulnD|storage hostD|http(s)
+1 3 hostD|unassigned serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 5 vulnD|http(s) rPrivEsc|http(s) remoteexp|http(s) dManip|http(s) exfil|http(s)
+1 3 vulnD|storage serD|unassigned hostD|hostingServer
+1 3 serD|unassigned vulnD|storage hostD|wireless
+1 3 serD|unassigned serD|unassigned vulnD|storage
+1 3 serD|unassigned serD|unassigned vulnD|storage
+1 3 hostD|remoteAccess serD|unassigned vulnD|storage
+1 3 hostD|http(s) serD|ATCcomm vulnD|storage
+1 3 serD|unassigned vulnD|storage hostD|http(s)
+1 3 serD|unassigned vulnD|storage hostD|remoteAccess
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 11 serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess vulnD|http(s) vulnD|http(s) infoD|http(s) uPrivEsc|http(s) rPrivEsc|http(s) exfil|http(s) delivery|http(s)
+1 5 serD|remoteAccess PAexp|http(s) remoteexp|http(s) ACE|http(s) dManip|http(s)
+1 6 serD|remoteAccess vulnD|http(s) rPrivEsc|http(s) remoteexp|http(s) ACE|http(s) dManip|http(s)
+1 11 serD|remoteAccess serD|remoteAccess surf|http(s) serD|remoteAccess vulnD|http(s) infoD|http(s) PAexp|http(s) remoteexp|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 7 serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage vulnD|surveillance uPrivEsc|surveillance rPrivEsc|surveillance
+1 3 infoD|surveillance exfil|surveillance delivery|surveillance
+1 3 vulnD|surveillance remoteexp|surveillance ACE|surveillance
+1 14 serD|unassigned vulnD|storage hostD|http(s) infoD|remoteAccess serD|remoteAccess vulnD|http(s) serD|remoteAccess surf|wireless vulnD|wireless infoD|wireless uPrivEsc|wireless rPrivEsc|wireless resHJ|http(s) exfil|http(s)
+1 6 serD|remoteAccess PAexp|wireless remoteexp|wireless ACE|http(s) dManip|http(s) delivery|wireless
+1 9 vulnD|http(s) serD|remoteAccess acctManip|wireless TOexp|http(s) remoteexp|http(s) ACE|http(s) privEsc|http(s) dManip|http(s) exfil|http(s)
+1 13 serD|remoteAccess serD|remoteAccess serD|remoteAccess serD|remoteAccess vulnD|hostingServer infoD|wireless rPrivEsc|http(s) TOexp|http(s) remoteexp|http(s) CnC|hostingServer ACE|http(s) dManip|wireless delivery|hostingServer
+1 10 serD|unassigned vulnD|storage hostD|hostingServer serD|remoteAccess vulnD|http(s) surf|hostingServer vulnD|http(s) infoD|http(s) uPrivEsc|hostingServer rPrivEsc|hostingServer
+1 7 serD|remoteAccess PAexp|http(s) remoteexp|http(s) ACE|http(s) dManip|http(s) exfil|hostingServer delivery|http(s)
+1 5 vulnD|http(s) rPrivEsc|hostingServer remoteexp|http(s) ACE|http(s) dManip|http(s)
+1 12 serD|remoteAccess serD|remoteAccess serD|remoteAccess vulnD|http(s) infoD|http(s) TOexp|http(s) PAexp|http(s) remoteexp|http(s) ACE|hostingServer dManip|http(s) exfil|http(s) delivery|http(s)
+1 3 serD|remoteAccess serD|remoteAccess serD|remoteAccess
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 3 serD|unassigned vulnD|storage bfCred|email
+1 9 hostD|http(s) serD|unassigned vulnD|storage infoD|remoteAccess vulnD|storage infoD|remoteAccess serD|unassigned vulnD|http(s) bfCred|email
+1 7 surf|http(s) serD|remoteAccess vulnD|http(s) infoD|http(s) rPrivEsc|http(s) resHJ|http(s) exfil|http(s)
+1 7 acctManip|http(s) TOexp|http(s) PAexp|http(s) remoteexp|http(s) ACE|http(s) privEsc|http(s) dManip|http(s)
+1 6 hostD|remoteAccess serD|unassigned vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|nameserver acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 5 hostD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 7 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess bfCred|email acctManip|broadcast netDOS|broadcast
+1 4 rPrivEsc|http(s) CnC|http(s) privEsc|http(s) exfil|http(s)
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 3 serD|remoteAccess uPrivEsc|hostingServer uPrivEsc|hostingServer
+1 5 vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 5 vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 5 vulnD|storage hostD|remoteAccess infoD|remoteAccess acctManip|broadcast netDOS|broadcast
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 7 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) hostD|http(s)
+1 6 serD|unassigned vulnD|storage hostD|hostingServer serD|unassigned vulnD|storage CnC|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 5 serD|unassigned vulnD|storage hostD|wireless infoD|unassigned exfil|unassigned
+1 5 serD|unassigned vulnD|storage hostD|wireless infoD|unassigned exfil|unassigned
+1 9 serD|unassigned vulnD|storage hostD|unassigned serD|unassigned vulnD|storage hostD|unassigned surf|http(s) infoD|http(s) netDOS|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 5 hostD|surveillance serD|unassigned vulnD|storage infoD|unassigned exfil|unassigned
+1 4 serD|unassigned vulnD|storage hostD|surveillance exfil|unassigned
+1 3 serD|unassigned vulnD|storage bfCred|email
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 5 hostD|http(s) hostD|http(s) serD|unassigned vulnD|storage rPrivEsc|email
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 5 serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 4 surf|http(s) serD|unassigned infoD|http(s) netDOS|http(s)
+1 7 hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess surf|http(s) infoD|http(s) netDOS|http(s)
+1 5 serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 6 surf|remoteAccess infoD|remoteAccess hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|http(s) hostD|http(s) serD|ATCcomm vulnD|http(s) hostD|http(s)
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 11 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|remoteAccess serD|unassigned vulnD|storage hostD|remoteAccess serD|voip vulnD|storage hostD|remoteAccess
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|http(s) hostD|http(s) serD|ATCcomm vulnD|http(s) hostD|http(s)
+1 14 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|unassigned hostD|http(s) serD|ATCcomm vulnD|storage hostD|http(s)
+1 4 hostD|wireless serD|unassigned vulnD|storage uPrivEsc|hostingServer
+1 4 hostD|hostingServer serD|unassigned vulnD|storage CnC|http(s)
+1 4 surf|http(s) infoD|http(s) uPrivEsc|hostingServer netDOS|http(s)
+1 5 serD|remoteAccess vulnD|storage hostD|wireless infoD|unassigned exfil|unassigned
+1 3 uPrivEsc|hostingServer uPrivEsc|hostingServer uPrivEsc|hostingServer
+1 5 serD|remoteAccess vulnD|storage hostD|surveillance infoD|unassigned exfil|unassigned
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 5 serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage hostD|http(s) serD|remoteAccess vulnD|storage hostD|http(s)
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 5 serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 10 serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|voip vulnD|storage hostD|remoteAccess serD|voip vulnD|storage hostD|http(s)
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 13 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|http(s) hostD|http(s) serD|remoteAccess vulnD|http(s) hostD|http(s)
+1 12 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 11 serD|unassigned vulnD|storage surf|broadcast infoD|broadcast serD|unassigned vulnD|storage vulnD|storage serD|ATCcomm vulnD|storage serD|remoteAccess vulnD|storage
+1 12 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage serD|ATCcomm serD|remoteAccess vulnD|storage vulnD|storage vulnD|storage
+1 13 serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|http(s) hostD|http(s) serD|remoteAccess vulnD|http(s) hostD|http(s)
+1 6 hostD|http(s) serD|remoteAccess vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 4 hostD|hostingServer serD|remoteAccess vulnD|storage serD|remoteAccess
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage infoD|unassigned serD|ATCcomm vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage hostD|remoteAccess serD|unassigned vulnD|storage hostD|remoteAccess serD|storage vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage
+1 6 serD|unassigned vulnD|storage hostD|http(s) hostD|http(s) serD|remoteAccess vulnD|storage
+1 6 hostD|http(s) serD|ATCcomm vulnD|storage serD|unassigned vulnD|storage hostD|http(s)
+1 3 CnC|http(s) CnC|http(s) CnC|http(s)
+1 3 infoD|unassigned exfil|unassigned exfil|unassigned
+1 4 serD|unassigned vulnD|storage infoD|unassigned exfil|unassigned
+1 3 serD|unassigned vulnD|storage uPrivEsc|hostingServer
+1 14 infoD|http(s) serD|surveillance vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|remoteAccess infoD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|unassigned
+1 5 infoD|http(s) serD|unassigned vulnD|storage infoD|http(s) infoD|http(s)
+1 7 infoD|unassigned serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 11 serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|unassigned serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 12 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|unassigned serD|unassigned vulnD|storage infoD|unassigned
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 infoD|unassigned serD|unassigned vulnD|storage
+1 4 serD|voip vulnD|storage vulnD|voip hostD|remoteAccess
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 3 hostD|http(s) serD|unassigned vulnD|storage
+1 3 hostD|surveillance serD|unassigned vulnD|storage
+1 4 hostD|wireless serD|unassigned vulnD|storage uPrivEsc|hostingServer
+1 3 hostD|hostingServer serD|unassigned vulnD|storage
+1 3 hostD|unassigned serD|unassigned vulnD|storage
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 8 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) infoD|remoteAccess hostD|remoteAccess
+1 11 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|http(s) hostD|http(s)
+1 11 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|http(s) hostD|http(s)
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 14 hostD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|voip hostD|remoteAccess infoD|remoteAccess hostD|remoteAccess serD|voip vulnD|storage hostD|http(s)
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 5 serD|unassigned vulnD|storage serD|unassigned vulnD|storage bfCred|email
+1 4 hostD|http(s) hostD|remoteAccess infoD|remoteAccess infoD|email
+1 10 hostD|unassigned serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|unassigned infoD|remoteAccess hostD|remoteAccess
+1 10 hostD|wireless serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|wireless infoD|remoteAccess hostD|remoteAccess
+1 9 hostD|surveillance serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage hostD|surveillance infoD|remoteAccess hostD|remoteAccess
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 11 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage vulnD|storage
+1 10 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage
+1 10 hostD|hostingServer serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|hostingServer infoD|remoteAccess hostD|remoteAccess
+1 13 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) infoD|remoteAccess hostD|remoteAccess serD|ATCcomm vulnD|storage hostD|http(s)
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|remoteAccess hostD|remoteAccess
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 hostD|remoteAccess surf|remoteAccess vulnD|remoteAccess infoD|remoteAccess rPrivEsc|remoteAccess acctManip|remoteAccess remoteexp|remoteAccess ACE|remoteAccess resHJ|remoteAccess dManip|remoteAccess exfil|remoteAccess delivery|remoteAccess
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|storage vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 7 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage infoD|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 hostD|http(s) serD|unassigned vulnD|storage infoD|http(s) ACE|http(s) exfil|http(s)
+1 12 hostD|wireless surf|wireless vulnD|wireless infoD|wireless rPrivEsc|wireless acctManip|wireless remoteexp|wireless ACE|wireless resHJ|wireless dManip|wireless exfil|wireless delivery|wireless
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 hostD|unassigned surf|unassigned vulnD|unassigned infoD|unassigned rPrivEsc|unassigned acctManip|unassigned remoteexp|unassigned ACE|unassigned resHJ|unassigned dManip|unassigned exfil|unassigned delivery|unassigned
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 11 hostD|hostingServer surf|hostingServer vulnD|hostingServer infoD|hostingServer rPrivEsc|hostingServer acctManip|hostingServer remoteexp|hostingServer ACE|hostingServer resHJ|hostingServer dManip|hostingServer exfil|hostingServer
+1 3 serD|remoteAccess serD|remoteAccess serD|remoteAccess
+1 13 serD|unassigned vulnD|storage hostD|surveillance surf|surveillance vulnD|surveillance infoD|surveillance rPrivEsc|surveillance acctManip|surveillance remoteexp|surveillance ACE|surveillance dManip|surveillance exfil|surveillance resHJ|surveillance
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 surf|http(s) hostD|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 11 surf|http(s) hostD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s)
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 surf|http(s) hostD|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 6 hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) ACE|http(s) exfil|http(s)
+1 12 hostD|wireless surf|wireless vulnD|wireless infoD|wireless rPrivEsc|wireless acctManip|wireless remoteexp|wireless ACE|wireless resHJ|wireless dManip|wireless exfil|wireless delivery|wireless
+1 11 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) ACE|http(s) dManip|http(s) exfil|http(s)
+1 5 hostD|hostingServer infoD|hostingServer rPrivEsc|hostingServer ACE|hostingServer exfil|hostingServer
+1 5 surf|hostingServer acctManip|hostingServer remoteexp|hostingServer resHJ|hostingServer dManip|hostingServer
+1 8 serD|unassigned vulnD|storage hostD|surveillance vulnD|surveillance infoD|surveillance rPrivEsc|surveillance ACE|surveillance exfil|surveillance
+1 4 acctManip|surveillance remoteexp|surveillance resHJ|surveillance dManip|surveillance
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 16 serD|unassigned vulnD|storage vulnD|http(s) surf|http(s) hostD|http(s) serD|unassigned infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 16 serD|unassigned vulnD|storage vulnD|http(s) surf|http(s) hostD|http(s) serD|unassigned infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 vulnD|storage vulnD|storage vulnD|storage
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 25 hostD|http(s) serD|remoteAccess vulnD|storage serD|unassigned hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess vulnD|storage hostD|http(s) serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 5 hostD|http(s) serD|remoteAccess vulnD|storage serD|remoteAccess bfCred|email
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 3 hostD|http(s) serD|remoteAccess bfCred|email
+1 5 serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess rPrivEsc|email
+1 9 hostD|http(s) serD|remoteAccess vulnD|storage serD|remoteAccess hostD|unassigned serD|unassigned vulnD|storage hostD|unassigned serD|remoteAccess
+1 11 hostD|http(s) serD|remoteAccess vulnD|storage serD|unassigned hostD|wireless serD|unassigned vulnD|storage hostD|wireless serD|remoteAccess infoD|unassigned exfil|unassigned
+1 4 serD|unassigned vulnD|storage hostD|wireless exfil|unassigned
+1 13 hostD|http(s) serD|remoteAccess vulnD|storage serD|remoteAccess hostD|hostingServer serD|unassigned vulnD|storage hostD|hostingServer serD|remoteAccess serD|unassigned vulnD|storage hostD|hostingServer serD|remoteAccess
+1 13 hostD|http(s) serD|remoteAccess vulnD|storage serD|unassigned hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage hostD|http(s)
+1 28 hostD|http(s) serD|remoteAccess vulnD|storage serD|unassigned hostD|remoteAccess serD|unassigned vulnD|storage serD|voip hostD|remoteAccess serD|remoteAccess vulnD|voip serD|unassigned vulnD|storage hostD|remoteAccess serD|remoteAccess vulnD|voip serD|unassigned vulnD|storage hostD|http(s) vulnD|storage hostD|http(s) serD|remoteAccess vulnD|voip serD|voip vulnD|storage serD|unassigned vulnD|storage vulnD|storage
+1 9 serD|remoteAccess serD|remoteAccess vulnD|storage hostD|surveillance serD|unassigned vulnD|storage hostD|surveillance infoD|unassigned exfil|unassigned
+1 5 serD|unassigned vulnD|storage hostD|surveillance infoD|unassigned exfil|unassigned
+1 19 serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 20 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 17 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 19 serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|surveillance vulnD|storage serD|remoteAccess vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 20 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 22 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|remoteAccess serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 9 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess
+1 9 serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess
+1 20 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 20 serD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage serD|ATCcomm vulnD|storage
+1 5 serD|storage vulnD|storage hostD|hostingServer serD|unassigned vulnD|storage
+1 6 serD|storage vulnD|storage serD|unassigned vulnD|storage infoD|unassigned exfil|unassigned
+1 4 infoD|unassigned infoD|unassigned infoD|unassigned CnC|unassigned
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage vulnD|storage vulnD|storage
+1 3 serD|unassigned vulnD|storage exfil|broadcast
+1 13 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) netDOS|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 6 hostD|http(s) serD|remoteAccess vulnD|storage infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 3 infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 11 surf|remoteAccess serD|unassigned vulnD|storage hostD|http(s) serD|remoteAccess vulnD|voip serD|voip vulnD|voip infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 6 serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage hostD|http(s)
+1 6 hostD|hostingServer serD|remoteAccess vulnD|storage infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 7 serD|unassigned serD|unassigned vulnD|storage hostD|hostingServer infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 3 infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage CnC|surveillance CnC|unassigned CnC|unassigned acctManip|broadcast
+1 3 serD|unassigned vulnD|storage acctManip|broadcast
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned vulnD|remoteAccess acctManip|broadcast
+1 5 serD|unassigned vulnD|storage infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 3 acctManip|broadcast serD|ATCcomm vulnD|storage
+1 3 acctManip|broadcast serD|unassigned vulnD|remoteAccess
+1 3 acctManip|broadcast serD|unassigned vulnD|storage
+1 3 acctManip|broadcast serD|ATCcomm vulnD|storage
+1 3 acctManip|broadcast serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|ATCcomm vulnD|storage serD|surveillance vulnD|storage
+1 3 acctManip|broadcast serD|unassigned vulnD|storage
+1 5 serD|unassigned vulnD|storage infoD|unassigned uPrivEsc|hostingServer exfil|unassigned
+1 3 CnC|unassigned CnC|unassigned CnC|unassigned
+1 6 serD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|storage vulnD|storage serD|ATCcomm vulnD|storage
+1 16 serD|unassigned vulnD|storage serD|storage vulnD|storage surf|broadcast vulnD|broadcast infoD|broadcast rPrivEsc|broadcast acctManip|broadcast remoteexp|broadcast ACE|broadcast resHJ|broadcast dManip|broadcast exfil|broadcast delivery|broadcast exfil|broadcast
+1 8 serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage vulnD|storage vulnD|storage
+1 7 serD|unassigned vulnD|storage serD|storage vulnD|storage vulnD|storage serD|ATCcomm serD|unassigned
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage infoD|unassigned infoD|unassigned
+1 5 serD|unassigned vulnD|storage vulnD|storage serD|unassigned bfCred|email
+1 13 vulnD|storage hostD|http(s) serD|unassigned surf|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s)
+1 9 infoD|unassigned dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess dDestruct|remoteAccess
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned CnC|http(s) serD|unassigned
+1 13 surf|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 5 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess
+1 6 hostD|surveillance serD|surveillance vulnD|storage infoD|remoteAccess infoD|unassigned exfil|unassigned
+1 5 infoD|unassigned infoD|unassigned infoD|unassigned infoD|unassigned infoD|unassigned
+1 4 hostD|wireless serD|unassigned vulnD|storage infoD|unassigned
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 5 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 hostD|http(s) serD|unassigned vulnD|storage bfCred|email
+1 5 hostD|hostingServer serD|unassigned vulnD|storage rPrivEsc|http(s) exfil|http(s)
+1 7 hostD|remoteAccess serD|storage vulnD|storage infoD|remoteAccess serD|storage vulnD|storage infoD|remoteAccess
+1 6 serD|unassigned vulnD|storage hostD|remoteAccess serD|unassigned vulnD|storage infoD|remoteAccess
+1 9 hostD|remoteAccess serD|remoteAccess vulnD|storage infoD|remoteAccess serD|ATCcomm vulnD|storage infoD|remoteAccess infoD|remoteAccess hostD|remoteAccess
+1 7 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess infoD|remoteAccess
+1 5 serD|unassigned vulnD|storage rPrivEsc|http(s) ACE|http(s) exfil|http(s)
+1 4 serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess
+1 4 hostD|remoteAccess infoD|remoteAccess serD|unassigned vulnD|storage
+1 6 hostD|unassigned serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 8 hostD|hostingServer serD|unassigned vulnD|storage hostD|remoteAccess infoD|remoteAccess surf|http(s) infoD|http(s) netDOS|http(s)
+1 12 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 5 serD|unassigned vulnD|storage vulnD|storage hostD|remoteAccess hostD|remoteAccess
+1 8 hostD|http(s) serD|unassigned vulnD|storage serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 10 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s)
+1 4 vulnD|http(s) acctManip|http(s) resHJ|http(s) dManip|http(s)
+1 3 rPrivEsc|http(s) ACE|http(s) exfil|http(s)
+1 3 rPrivEsc|http(s) ACE|http(s) exfil|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 7 serD|unassigned vulnD|storage serD|unassigned vulnD|storage surf|broadcast infoD|broadcast rPrivEsc|broadcast
+1 4 serD|unassigned vulnD|storage vulnD|storage serD|unassigned
+1 4 serD|unassigned vulnD|storage serD|storage vulnD|storage
+1 7 serD|unassigned vulnD|storage serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 10 vulnD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 infoD|unassigned rPrivEsc|http(s) ACE|http(s) exfil|http(s)
+1 5 surf|http(s) infoD|unassigned rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 6 infoD|http(s) surf|http(s) infoD|unassigned rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 6 infoD|http(s) surf|http(s) infoD|unassigned CnC|http(s) rPrivEsc|http(s) ACE|http(s)
+1 3 infoD|http(s) surf|http(s) CnC|http(s)
+1 3 infoD|unassigned rPrivEsc|http(s) ACE|http(s)
+1 3 infoD|http(s) surf|http(s) CnC|http(s)
+1 3 infoD|unassigned rPrivEsc|http(s) ACE|http(s)
+1 6 infoD|http(s) surf|http(s) infoD|unassigned rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 4 infoD|http(s) surf|http(s) rPrivEsc|remoteAccess exfil|remoteAccess
+1 12 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 4 infoD|unassigned rPrivEsc|http(s) ACE|http(s) exfil|http(s)
+1 4 surf|http(s) CnC|http(s) rPrivEsc|http(s) ACE|http(s)
+1 6 infoD|http(s) surf|http(s) vulnD|http(s) CnC|http(s) rPrivEsc|http(s) ACE|http(s)
+1 5 infoD|http(s) surf|http(s) rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 5 infoD|http(s) surf|http(s) CnC|http(s) rPrivEsc|http(s) ACE|http(s)
+1 5 infoD|http(s) surf|http(s) rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 6 infoD|http(s) surf|http(s) infoD|unassigned rPrivEsc|http(s) CnC|http(s) ACE|http(s)
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 12 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 3 serD|unassigned vulnD|storage rPrivEsc|email
+1 14 surf|http(s) hostD|http(s) serD|unassigned vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 10 surf|surveillance vulnD|surveillance infoD|surveillance rPrivEsc|surveillance acctManip|surveillance remoteexp|surveillance ACE|surveillance dManip|surveillance exfil|surveillance resHJ|surveillance
+1 15 serD|unassigned vulnD|storage surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) netDOS|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 5 serD|unassigned vulnD|remoteAccess remoteexp|remoteAccess dManip|remoteAccess exfil|remoteAccess
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 6 serD|unassigned vulnD|storage serD|unassigned vulnD|storage surf|http(s) netDOS|http(s)
+1 3 rPrivEsc|http(s) ACE|http(s) resHJ|http(s)
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 6 serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s) resHJ|http(s)
+1 5 infoD|http(s) infoD|http(s) infoD|http(s) infoD|http(s) infoD|http(s)
+1 3 serD|unassigned vulnD|storage exfil|remoteAccess
+1 3 exfil|remoteAccess serD|unassigned vulnD|storage
+1 5 serD|unassigned vulnD|storage hostD|http(s) vulnD|http(s) exfil|http(s)
+1 5 serD|unassigned vulnD|storage hostD|http(s) vulnD|http(s) exfil|http(s)
+1 3 serD|unassigned vulnD|storage exfil|broadcast
+1 3 serD|surveillance vulnD|storage hostD|http(s)
+1 3 serD|unassigned vulnD|storage vulnD|storage
+1 3 serD|unassigned vulnD|storage exfil|unassigned
+1 3 hostD|remoteAccess serD|voip exfil|unassigned
+1 3 infoD|http(s) infoD|http(s) CnC|http(s)
+1 6 vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage exfil|unassigned
+1 5 vulnD|storage vulnD|storage serD|unassigned vulnD|storage exfil|unassigned
+1 15 vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage serD|unassigned serD|storage vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 14 vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess serD|ATCcomm vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned serD|unassigned vulnD|storage vulnD|storage
+1 25 vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage acctManip|broadcast
+1 10 serD|unassigned serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage acctManip|broadcast
+1 7 infoD|nameserver vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|http(s) hostD|http(s)
+1 28 vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage serD|broadcast vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage serD|ATCcomm serD|unassigned vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 14 serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage serD|unassigned serD|unassigned vulnD|storage vulnD|storage serD|remoteAccess serD|unassigned vulnD|storage vulnD|storage
+1 3 vulnD|storage vulnD|storage vulnD|storage
+1 22 vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|surveillance vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 15 serD|unassigned vulnD|storage vulnD|storage serD|storage vulnD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage
+1 23 vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage vulnD|storage vulnD|storage serD|storage vulnD|storage vulnD|storage serD|unassigned serD|unassigned vulnD|storage serD|unassigned acctManip|broadcast
+1 15 vulnD|storage vulnD|remoteAccess serD|unassigned vulnD|storage serD|surveillance vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage
+1 21 vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 11 vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage infoD|nameserver acctManip|broadcast
+1 4 vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage
+1 7 vulnD|storage vulnD|storage vulnD|storage hostD|wireless serD|remoteAccess infoD|unassigned exfil|unassigned
+1 3 vulnD|storage vulnD|storage exfil|unassigned
+1 14 vulnD|storage serD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess vulnD|storage serD|ATCcomm vulnD|remoteAccess serD|unassigned vulnD|storage acctManip|broadcast
+1 15 vulnD|remoteAccess vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|ATCcomm vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|storage
+1 22 vulnD|remoteAccess vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|remoteAccess serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|surveillance vulnD|storage vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage acctManip|broadcast
+1 11 vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess infoD|nameserver acctManip|broadcast
+1 6 vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage hostD|http(s)
+1 26 serD|storage vulnD|storage vulnD|storage serD|voip serD|voip hostD|remoteAccess serD|remoteAccess vulnD|voip vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess serD|storage vulnD|storage vulnD|storage serD|unassigned acctManip|broadcast
+1 9 vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess acctManip|broadcast
+1 5 vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage hostD|http(s)
+1 25 serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|broadcast vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|storage vulnD|storage vulnD|remoteAccess serD|surveillance vulnD|storage acctManip|broadcast
+1 11 vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess acctManip|broadcast
+1 5 infoD|nameserver vulnD|storage vulnD|storage vulnD|storage serD|unassigned
+1 23 vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 14 vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage
+1 25 vulnD|storage vulnD|storage serD|ATCcomm vulnD|storage vulnD|storage serD|ATCcomm vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|ATCcomm serD|unassigned vulnD|storage acctManip|broadcast
+1 13 vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|remoteAccess infoD|nameserver acctManip|broadcast
+1 6 vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage
+1 23 serD|remoteAccess vulnD|storage serD|remoteAccess vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage acctManip|broadcast
+1 9 vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 5 vulnD|remoteAccess vulnD|storage serD|ATCcomm vulnD|storage vulnD|storage
+1 23 serD|ATCcomm vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage serD|unassigned serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|remoteAccess serD|unassigned vulnD|storage acctManip|broadcast
+1 10 vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess acctManip|broadcast
+1 7 infoD|nameserver vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned
+1 29 vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|remoteAccess serD|unassigned vulnD|storage vulnD|storage serD|surveillance vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage serD|unassigned serD|ATCcomm vulnD|storage acctManip|broadcast
+1 10 vulnD|remoteAccess vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 10 serD|unassigned infoD|unassigned vulnD|storage serD|storage vulnD|storage infoD|unassigned infoD|unassigned vulnD|storage hostD|http(s) vulnD|http(s)
+1 20 vulnD|remoteAccess vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|broadcast vulnD|storage serD|storage serD|unassigned vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage acctManip|broadcast
+1 9 serD|unassigned vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage vulnD|remoteAccess acctManip|broadcast
+1 6 infoD|nameserver vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage
+1 23 vulnD|remoteAccess vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|remoteAccess serD|unassigned serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned acctManip|broadcast
+1 12 vulnD|storage vulnD|storage vulnD|storage vulnD|storage vulnD|storage serD|unassigned serD|surveillance vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage acctManip|broadcast
+1 4 vulnD|storage vulnD|remoteAccess vulnD|storage vulnD|storage
+1 25 vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) serD|unassigned vulnD|storage vulnD|storage acctManip|broadcast
+1 19 vulnD|storage vulnD|remoteAccess serD|unassigned serD|unassigned serD|unassigned vulnD|storage vulnD|storage vulnD|storage serD|unassigned vulnD|storage vulnD|storage serD|remoteAccess vulnD|storage vulnD|storage vulnD|remoteAccess vulnD|storage serD|unassigned serD|unassigned vulnD|storage
+1 6 serD|remoteAccess hostD|surveillance hostD|surveillance serD|remoteAccess infoD|unassigned exfil|unassigned
+1 5 serD|unassigned vulnD|storage hostD|surveillance infoD|unassigned exfil|unassigned
+1 6 serD|remoteAccess serD|unassigned vulnD|storage hostD|http(s) bfCred|email bfCred|email
+1 5 serD|remoteAccess surf|http(s) infoD|http(s) remoteexp|http(s) netDOS|http(s)
+1 5 serD|unassigned vulnD|storage hostD|wireless infoD|unassigned exfil|unassigned
+1 3 serD|unassigned serD|broadcast vulnD|storage
+1 10 serD|remoteAccess hostD|http(s) serD|remoteAccess vulnD|remoteAccess serD|unassigned vulnD|storage serD|unassigned surf|http(s) infoD|http(s) netDOS|http(s)
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 5 serD|remoteAccess serD|unassigned vulnD|remoteAccess serD|unassigned vulnD|storage
+1 4 serD|remoteAccess surf|http(s) infoD|http(s) netDOS|http(s)
+1 7 hostD|hostingServer serD|unassigned vulnD|storage hostD|hostingServer serD|remoteAccess vulnD|storage netDOS|http(s)
+1 4 infoD|http(s) hostD|hostingServer serD|surveillance vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 8 hostD|http(s) serD|unassigned vulnD|storage surf|http(s) infoD|http(s) remoteexp|http(s) netDOS|http(s) netDOS|http(s)
+1 4 infoD|http(s) remoteexp|http(s) netDOS|http(s) netDOS|http(s)
+1 4 infoD|unassigned hostD|http(s) serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 serD|unassigned serD|remoteAccess vulnD|storage
+1 8 serD|unassigned vulnD|storage serD|unassigned vulnD|storage hostD|http(s) vulnD|http(s) infoD|http(s) netDOS|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|remoteAccess vulnD|storage serD|unassigned vulnD|storage
+1 5 serD|unassigned vulnD|storage hostD|remoteAccess serD|remoteAccess vulnD|voip
+1 3 serD|unassigned vulnD|storage serD|remoteAccess
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|ATCcomm vulnD|storage
+1 4 serD|unassigned vulnD|storage serD|remoteAccess vulnD|storage
+1 3 serD|unassigned vulnD|storage serD|remoteAccess
+1 9 hostD|remoteAccess serD|unassigned vulnD|storage infoD|remoteAccess serD|unassigned vulnD|storage hostD|http(s) vulnD|storage hostD|http(s)
+1 8 hostD|http(s) serD|unassigned vulnD|storage serD|remoteAccess hostD|http(s) surf|http(s) infoD|http(s) netDOS|http(s)
+1 3 hostD|http(s) serD|unassigned vulnD|storage
+1 4 infoD|nameserver hostD|http(s) serD|unassigned vulnD|storage
+1 4 serD|remoteAccess serD|remoteAccess serD|unassigned vulnD|storage
+1 17 serD|remoteAccess hostD|http(s) serD|remoteAccess hostD|http(s) serD|ATCcomm vulnD|storage serD|unassigned vulnD|storage surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) remoteexp|http(s) ACE|http(s) netDOS|http(s) dManip|http(s) exfil|http(s)
+1 3 CnC|http(s) resHJ|http(s) delivery|http(s)
+1 3 serD|remoteAccess serD|remoteAccess serD|remoteAccess
+1 3 serD|remoteAccess serD|remoteAccess serD|remoteAccess
+1 4 serD|remoteAccess serD|remoteAccess serD|unassigned vulnD|remoteAccess
+1 7 serD|remoteAccess serD|remoteAccess serD|remoteAccess vulnD|http(s) hostD|http(s) serD|remoteAccess serD|unassigned
+1 6 hostD|wireless serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 11 surf|hostingServer vulnD|hostingServer infoD|hostingServer rPrivEsc|hostingServer acctManip|hostingServer remoteexp|hostingServer ACE|hostingServer resHJ|hostingServer dManip|hostingServer exfil|hostingServer delivery|hostingServer
+1 3 hostD|wireless serD|unassigned vulnD|storage
+1 4 serD|remoteAccess vulnD|storage hostD|remoteAccess serD|remoteAccess
+1 5 serD|remoteAccess hostD|http(s) serD|remoteAccess vulnD|http(s) serD|remoteAccess
+1 6 hostD|hostingServer serD|unassigned vulnD|storage surf|http(s) infoD|http(s) netDOS|http(s)
+1 10 vulnD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 16 serD|unassigned vulnD|storage hostD|http(s) surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s) netDOS|http(s)
+1 13 surf|http(s) vulnD|http(s) infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) netDOS|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 12 surf|http(s) vulnD|storage infoD|http(s) rPrivEsc|http(s) acctManip|http(s) remoteexp|http(s) CnC|http(s) ACE|http(s) resHJ|http(s) dManip|http(s) exfil|http(s) delivery|http(s)
+1 3 serD|unassigned vulnD|storage serD|unassigned
+1 8 serD|unassigned vulnD|storage serD|voip hostD|remoteAccess vulnD|remoteAccess remoteexp|remoteAccess dManip|remoteAccess exfil|remoteAccess
+1 7 surf|remoteAccess infoD|remoteAccess rPrivEsc|remoteAccess acctManip|remoteAccess ACE|remoteAccess resHJ|remoteAccess delivery|remoteAccess
+1 3 hostD|http(s) serD|remoteAccess bfCred|email
+1 3 vulnD|http(s) dManip|http(s) exfil|http(s)
+1 3 surf|http(s) infoD|http(s) netDOS|http(s)
+1 3 hostD|http(s) serD|remoteAccess CnC|http(s)
+1 4 serD|unassigned vulnD|storage serD|unassigned vulnD|storage
+1 3 uPrivEsc|hostingServer uPrivEsc|hostingServer uPrivEsc|hostingServer
