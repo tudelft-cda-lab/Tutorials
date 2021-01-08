@@ -44,25 +44,63 @@ gives
 
 ![image of learned state machine](models/tutorial_alergia.png)
 
-
-
-
-
-Every step made by the algorithm is output to the console. An x means that the algorithm identifies a new state in the model. The algorithm tried all possible merges between this state and the existing ones, and all failed to meet the consistency criterion set in the EDSM evaluation function (inherited from the count_driven class):
+Like EDSM, see the first tutorial, an x means that the algorithm identifies a new state in the model. The algorithm tried all possible merges between this state and the existing ones, and all failed to meet the consistency criterion set in the Alergia evaluation function:
 
 ```c++
-bool count_driven::consistent(state_merger *merger, apta_node* left, apta_node* right){
-    if(inconsistency_found) return false;
-  
-    count_data* l = (count_data*)left->data;
-    count_data* r = (count_data*)right->data;
-
-    if(l->pos_final() != 0 && r->neg_final() != 0){ inconsistency_found = true; return false; }
-    if(l->neg_final() != 0 && r->pos_final() != 0){ inconsistency_found = true; return false; }
+/* ALERGIA, consistency based on Hoeffding bound, only uses positive (type=1) data, pools infrequent counts */
+bool alergia::consistent(state_merger *merger, apta_node* left, apta_node* right){
+    alergia_data* l = (alergia_data*) left->data;
+    alergia_data* r = (alergia_data*) right->data;
     
+    return data_consistent(l, r);
+};
+```
+
+Where data_consistent() is a somewhat complicated routine that tests for consistency between the left and right states. It collects the frequencies of symbols, and optionally final/ending counts, and calls the Alergia consistecy check for each pair of the same occurrence in the left and right states:
+
+```c++
+bool alergia::alergia_consistency(double right_count, double left_count, double right_total, double left_total){
+    if(left_count >= SYMBOL_COUNT && right_count >= SYMBOL_COUNT){
+        double bound = (1.0 / sqrt(left_total) + 1.0 / sqrt(right_total));
+        bound = bound * sqrt(0.5 * log(2.0 / CHECK_PARAMETER));
+
+        double gamma = (left_count / left_total) - (right_count / right_total);
+
+        if(gamma > bound) return false;
+        if(-gamma > bound) return false;
+    }
     return true;
 };
 ```
+
+Here right_count (left_count) is the count from the right (left) state and the totals are the total number of occurrences in the right (left) state. The check is the Hoeffding bound check from the original Alergia algorithm. The code contains one additional trick that greatly influences the performed checks. The flexfringe Alergia implementation performs symbol pooling. The core idea of this is to use the absence, or low frequency, of symbols as important information to prevent merges from happening. This may be especially important in the software domain, where the absence of symbols is important when determining the state space. For instance:
+
+symbol | 1 | 2 | 3 | 4 | 5 |
+--- | --- | --- | --- | --- | --- |
+count left | 0 | 0 | 15 | 5 | 5 |
+count right | 5 | 5 | 15 | 0 | 0 |
+
+would in a normal Alergia check be considered consistent:
+
+```
+5 / 25 - 0 = 0.20 < (1/sqrt(25) + 1/sqrt(25)) * sqrt(0.5 * ln(2.0 / 0.01)) = 0.246...
+```
+
+even though two out of the three symbols that orrur in the left/right node do not occur in the other. To partially overcome this, we pool the distribution bins of low frequency (in this case 0) counts. Giving us:
+
+symbol | 1,2 | 3 | 4,5 |
+--- | --- | --- | --- |
+count left | 0 | 15 | 10 |
+count right | 10 | 15 | 0 |
+
+and a significant difference:
+
+```
+10 / 25 - 0 = 0.40 > 0.246...
+```
+
+
+
 
 This code first casts the data type in the states (apta_node*) to count_data, giving access to the data and functions required for the test, and then checks a pair of merged states during determinization, whether one is positive (l->pos_final() != 0) and the other negative (r->neg_final() != 0). If so, the resulting model is considered inconsistent because there exists a state that both a positive and a negative trace end in. The method sets found_inconsistency to true and returns false. If not, the method returns true, indicating that the pair of states can be merged. This method is called for ever pair of states that are merged during determinization.
 
