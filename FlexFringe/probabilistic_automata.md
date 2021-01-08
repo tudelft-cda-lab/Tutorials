@@ -73,7 +73,19 @@ bool alergia::alergia_consistency(double right_count, double left_count, double 
 };
 ```
 
-Here right_count (left_count) is the count from the right (left) state and the totals are the total number of occurrences in the right (left) state. The check is the Hoeffding bound check from the original Alergia algorithm. The code contains one additional trick that greatly influences the performed checks. The flexfringe Alergia implementation performs symbol pooling. The core idea of this is to use the absence, or low frequency, of symbols as important information to prevent merges from happening. This may be especially important in the software domain, where the absence of symbols is important when determining the state space. For instance:
+Here right_count (left_count) is the count from the right (left) state and the totals are the total number of occurrences in the right (left) state. The check is the Hoeffding bound check from the original Alergia algorithm. The CHECK_PARAMETER is a user-defined parameter for the significance of this statistical test, the default is 0.05 and it can be set using the extrapar parameter. Setting this much smaller (0.05) creates less inconsistencies and therefore a smaller model:
+
+![image of learned state machine](models/tutorial_alergia_small.png)
+
+Setting extrapar larger (0.5) gives more inconsistencies and therefore a larger model:
+
+![image of learned state machine](models/tutorial_alergia_large.png)
+
+We advice setting the extrapar parameter using trial-and-error. In this tutorial, we can cheat a bit because we know that there exists a succint model that seperates positive from negative traces. Although this additional information is not used by the state merging process using the Alergia heuristic, we can test whether a resulting model provides good seperation. The states that the positive and negative traces end in are indicated in the .dot model for every state after the fin: statement. In this case, we would argue the smaller model is better because it provides better seperation (only 42 mistakes in the two left states) using less states.
+
+**Pooling**
+
+The code contains an additional trick that greatly influences the performed checks. The flexfringe Alergia implementation performs symbol pooling. The core idea of this is to use the absence, or low frequency, of symbols as important information to prevent merges from happening. This may be especially important in the software domain, where the absence of symbols is important when determining the state space. For instance:
 
 symbol | 1 | 2 | 3 | 4 | 5 |
 --- | --- | --- | --- | --- | --- |
@@ -99,7 +111,7 @@ and a significant difference:
 10 / 25 - 0 = 0.40 > 0.246...
 ```
 
-This is what the somewhat complex data_consistent routine computes on-the-fly, depending on the current frqequency counts in the left and right nodes. Three parameters that control this process are the state_count, symbol_count, and correction parameters. The state_count parameter (default 50) only performs statistical checks such as the alergia consistency test for states that occur at least state_count times. If either the left or the right state occur less frequently, the consistency check simply returns true. The symbol_count parameter as a lower bound on a symbol's frequency. When the count is smaller in the right or left state, its bin is pooled and its counts are added to the right or left pool, respectively. Intuitively, the higher this value, the more inconsistencies Alergia can find. However, set it too large and counts that indicated a significant difference get pooled and the difference disappears. As this really depends on the data at hand, and its distribution and alphabet size etc., setting this parameter is a matter of trail-and-error (default 25). The final parameter that influences this process is the correction parameter, which simply adds correction counts to all occurrence counts after pooling. This is effect performs a type of Laplace smoothing on all counts at the time of performing the consistency test.
+This is what the somewhat complex data_consistent routine computes on-the-fly, depending on the current frqequency counts in the left and right nodes. Three parameters that control this process are the state_count, symbol_count, and correction parameters. The state_count parameter (default 50) only performs statistical checks such as the alergia consistency test for states that occur at least state_count times. If either the left or the right state occur less frequently, the consistency check simply returns true. The symbol_count parameter as a lower bound on a symbol's frequency. When the count is smaller in the right or left state, its bin is pooled and its counts are added to the right or left pool, respectively. Intuitively, the higher this value, the more inconsistencies Alergia can find. However, set it too large and counts that indicated a significant difference get pooled and the difference disappears. As this really depends on the data at hand, and its distribution and alphabet size etc., setting this parameter is a matter of trail-and-error (default 25). The final parameter that influences this process is the correction parameter (default 0), which simply adds correction counts to all occurrence counts after pooling. This is effect performs a type of Laplace smoothing on all counts at the time of performing the consistency test.
 
 
 
