@@ -64,7 +64,7 @@ bool alergia::alergia_consistency(double right_count, double left_count, double 
         double bound = (1.0 / sqrt(left_total) + 1.0 / sqrt(right_total));
         bound = bound * sqrt(0.5 * log(2.0 / CHECK_PARAMETER));
 
-        double gamma = (left_count / left_total) - (right_count / right_total);
+        double gamma = ((left_count + CORRECTION) / left_total) - ((right_count + CORRECTION) / right_total);
 
         if(gamma > bound) return false;
         if(-gamma > bound) return false;
@@ -98,6 +98,8 @@ and a significant difference:
 ```
 10 / 25 - 0 = 0.40 > 0.246...
 ```
+
+This is what the somewhat complex data_consistent routine computes on-the-fly, depending on the current frqequency counts in the left and right nodes. Three parameters that control this process are the state_count, symbol_count, and correction parameters. The state_count parameter (default 50) only performs statistical checks such as the alergia consistency test for states that occur at least state_count times. If either the left or the right state occur less frequently, the consistency check simply returns true. The symbol_count parameter as a lower bound on a symbol's frequency. When the count is smaller in the right or left state, its bin is pooled and its counts are added to the right or left pool, respectively. Intuitively, the higher this value, the more inconsistencies Alergia can find. However, set it too large and counts that indicated a significant difference get pooled and the difference disappears. As this really depends on the data at hand, and its distribution and alphabet size etc., setting this parameter is a matter of trail-and-error (default 25). The final parameter that influences this process is the correction parameter, which simply adds correction counts to all occurrence counts after pooling. This is effect performs a type of Laplace smoothing on all counts at the time of performing the consistency test.
 
 
 
