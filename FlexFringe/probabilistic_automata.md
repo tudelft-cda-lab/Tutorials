@@ -44,7 +44,7 @@ gives
 
 ![image of learned state machine](models/tutorial_alergia.png)
 
-Like EDSM, see the first tutorial, an x means that the algorithm identifies a new state in the model. The algorithm tried all possible merges between this state and the existing ones, and all failed to meet the consistency criterion set in the Alergia evaluation function:
+Like EDSM, see the first tutorial, an x means that the algorithm identifies a new state in the model with the size written next to it, an m means a merge with the number of state pairs being merged during determinization. The algorithm tried all possible merges between this state and the existing ones, and all failed to meet the consistency criterion set in the Alergia evaluation function:
 
 ```c++
 /* ALERGIA, consistency based on Hoeffding bound, only uses positive (type=1) data, pools infrequent counts */
@@ -111,9 +111,14 @@ and a significant difference:
 10 / 25 - 0 = 0.40 > 0.246...
 ```
 
-This is what the somewhat complex data_consistent routine computes on-the-fly, depending on the current frqequency counts in the left and right nodes. Three parameters that control this process are the state_count, symbol_count, and correction parameters. The state_count parameter (default 50) only performs statistical checks such as the alergia consistency test for states that occur at least state_count times. If either the left or the right state occur less frequently, the consistency check simply returns true. The symbol_count parameter as a lower bound on a symbol's frequency. When the count is smaller in the right or left state, its bin is pooled and its counts are added to the right or left pool, respectively. Intuitively, the higher this value, the more inconsistencies Alergia can find. However, set it too large and counts that indicated a significant difference get pooled and the difference disappears. As this really depends on the data at hand, and its distribution and alphabet size etc., setting this parameter is a matter of trail-and-error (default 25). The final parameter that influences this process is the correction parameter (default 0), which simply adds correction counts to all occurrence counts after pooling. This is effect performs a type of Laplace smoothing on all counts at the time of performing the consistency test.
+This is what the somewhat complex data_consistent routine computes on-the-fly, depending on the current frequency counts in the left and right nodes. The original Alergia without pooling can aslo be used in Flexfringe, implemented in the alergia94 heuristic.
+
+**Setting parameters**
+
+Three parameters that control the Alergia merging process (and other probabilistic automaton heuristics) are the state_count, symbol_count, and correction parameters. The state_count parameter (default 50) only performs statistical checks such as the alergia consistency test for states that occur at least state_count times. If either the left or the right state occur less frequently, the consistency check simply returns true.
 
 
+The symbol_count parameter as a lower bound on a symbol's frequency. When the count is smaller in the right or left state, its bin is pooled and its counts are added to the right or left pool, respectively. Intuitively, the higher this value, the more inconsistencies Alergia can find. However, set it too large and counts that indicated a significant difference get pooled and the difference disappears. As this really depends on the data at hand, and its distribution and alphabet size etc., setting this parameter is a matter of trail-and-error (default 25). The final parameter that influences this process is the correction parameter (default 0), which simply adds correction counts to all occurrence counts after pooling. This is effect performs a type of Laplace smoothing on all counts at the time of performing the consistency test.
 
 
 This code first casts the data type in the states (apta_node*) to count_data, giving access to the data and functions required for the test, and then checks a pair of merged states during determinization, whether one is positive (l->pos_final() != 0) and the other negative (r->neg_final() != 0). If so, the resulting model is considered inconsistent because there exists a state that both a positive and a negative trace end in. The method sets found_inconsistency to true and returns false. If not, the method returns true, indicating that the pair of states can be merged. This method is called for ever pair of states that are merged during determinization.
